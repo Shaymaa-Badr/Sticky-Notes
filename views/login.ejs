@@ -1,0 +1,26 @@
+<%- include('shared/header.ejs') %>
+    <div class="container my-5 py-5">
+        <% if (exists.length !=0) { %>
+            <div class="alert alert-danger text-center">
+                Email does not exist
+            </div>
+            <% } %>
+                <% if (incorrect.length!=0) { %>
+                    <div class="alert alert-danger text-center">
+                        Incorrect Password
+                    </div>
+                    <% } %>
+                        <div class="col-md-5 m-auto text-center">
+                            <form action="/handleSignin" method="POST">
+                                <div class="form-group">
+                                    <input placeholder="Enter email" name="email" type="email" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <input placeholder="confirm Password" name="password" type="password"
+                                        class="form-control" />
+                                </div>
+                                <button type="submit" class="btn btn-info w-100">SignIn</button>
+                            </form>
+                        </div>
+    </div>
+    <%- include('shared/footer.ejs') %>
