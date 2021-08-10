@@ -112,12 +112,13 @@ textarea {
 }
 
 .note a {
-    margin:5px;
+    
     color: black;
     font-size: 23px;
 }
 
 .note i {
+    margin:5px;
     transition: all 0.3s;
 }
 
