@@ -112,6 +112,7 @@ textarea {
 }
 
 .note a {
+    margin:5px;
     color: black;
     font-size: 23px;
 }
